@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    text-align: center;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    padding-top: 300px;
+    font-size: x-large;
+   
+}
+.wrapper{
+    background-image: url(../pictures/restaurant\ 1.jpg);
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+}
+h1{
+    color: rgb(238, 36, 46);
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+
+h5{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+h4{
+color: aliceblue;
+text-align: center;
+}
+
+
+.card{
+    background-color: rgba(80,76,67,0.6);
+    box-shadow: 2px 4px rgba(80,76,67,0.8);
+    transition: 0.3s;
+    width: 230px;
+    height: 350px;
+    margin: 20px 30px;
+    border-radius: 15px;
+    
+    
+}
+
+img{
+    width: 230px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.card button{
+    padding: 10px;
+    display: flex;
+    /* position: fixed; */
+    margin: auto;
+    text-align: center;
+    background-color: rgb(234, 173, 69);
+    border-radius: 40px;
+    box-shadow: 1px 3px #504C43;
+}
+
+.wrapper2{
+    position: relative;
+    display: flex;
+    padding: 10px 20px;
+}
+
+.drinks{
+    background-color: #c9a34c;
+    height: 60vh;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+  }
+  

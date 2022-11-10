@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>A Survey Form</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            padding: 60px;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        }
+        table, th, td {
+            border: 2px solid chocolate;
+            border-collapse: collapse;
+            width: 900px;
+            padding: 20px 10px 10px 20px;
+        }
+        th, td {
+            border-color: black;
+        }
+        td {
+            text-align: center;
+        }
+
+        h1, p, h2, h4 {
+            padding: 20px 10px 10px 20px;
+            color:chocolate;
+            font-weight: bold;
+        }
+
+        .header{
+            color: chocolate;
+        }
+        caption{
+            color: chocolate;
+        }
+        button{
+            background-color: chocolate;
+            padding: 15px 35px;
+            color: white;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            margin:auto;
+        }
+        label{
+            color: black;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 20px 10px 10px 20px;
+        }
+        .form{
+            padding: 20px 10px 10px 20px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>A Simple Survey Form</h1>
+    <p>I learnt about tables and just want to practice by creating a survey form using HTML tables and forms.</p>
+    <div class="table">
+        <table style="height:500px">
+            <caption><strong>CUSTOMER SATISFACTION SURVEY</strong></caption> <br>
+            <tbody>
+<!-- Rows with the data inputs-->
+            <tr>
+                <th class="header">Sl No.</th>
+                <th class="header">Questions</th>
+                <th class="header">Strongly<br> Disagree</th>
+                <th class="header">Disagree</th>
+                <th class="header">Neutral</th>
+                <th class="header">Agree</th>
+                <th class="header">Strongly<br>Agree</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td  style="text-align:left">This product is durable and affordable</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td  style="text-align:left">I am thinking of buying this product again</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td  style="text-align:left">I will recommemd this product to someone else</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td  style="text-align:left">I am happy with the service I received</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td  style="text-align:left">I will definitely come back</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+        </tbody>    
+        </table>
+        <!-- inserting a line and a break -->
+        <br/>
+        <br/>
+        <hr>
+
+        <h2>Let us know how we can improve our services</h2>
+        <!-- Creating a form to be filled -->
+        <form action="#">
+            <label for="name">*Name :</label>
+            <input type="text" id="name" value="John Doe"><br/>
+            <br/>
+            <label for="name">*Email :</label>
+            <input type="text" id="email" value="abc@email.com"><br/>
+            <br/>
+            <label for="numbers">*Age :</label>
+            <select name="age" id="age">
+                <option value="10-20">10-20</option>
+                <option value="21-30">21-30</option>
+                <option value="31-40">31-40</option>
+                <option value="41-50">41-50</option>
+                <option value="51-60">51-60</option>
+                <option value="above 60">above 60</option>
+                </select><br/>
+                <br/>
+                <label for="text">Which option best describes your current role?</label>
+                <select name="role" id="">
+                    <option value="Student">Student</option>
+                    <option value="Employee">Employee</option>
+                    <option value="Employer">Employer</option>
+                    <option value="Pensioner">Pensioner</option>
+                </select><br/>
+                <br/>
+                <label for="text">How likely are you to recommend our Products to a friend?</label><br/>
+                <br/>
+                <!-- A radio input -->
+                <input type="radio"><label for="Definitely">Definitely</label>
+                <input type="radio"><label for="Maybe">Maybe</label>
+                <input type="radio"><label for="Not sure">Not Sure</label><br/>
+                <h4>Do you have any Suugestions for us?</h4>
+                <!-- Creating a textarea for suggestions -->
+                <textarea class="area" name="#" rows="10" cols="30">Type here </textarea><br/>
+                <br/>
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

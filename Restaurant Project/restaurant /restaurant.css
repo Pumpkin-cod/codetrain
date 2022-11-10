@@ -1,0 +1,100 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero{
+     background-image: url("../pictures/restaurant\ 2.jpg"); 
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 20%;
+}
+
+.logo {
+    color: white;  
+    font-size: 30px;
+    font-weight: bold;
+}
+
+span{
+    color: red;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px 30px;
+    
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    right: 50px;
+}
+
+nav ul li a:hover{
+    color: red;
+    transition: 0.3s;
+
+}
+.flex {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -55%);
+    max-width: 1000px;
+    min-height: 40px;
+    /* border: 15px solid blue; */
+    padding: 15px;
+    bottom: 180px;
+}
+
+h6 {
+    color: red;
+    font-size: 25px;
+    line-height: 50px;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    line-height: 60px;
+    padding-bottom: 20px;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+
+}
+button{
+    background-color: white;
+    padding: 15px 35px;
+    color: red;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
